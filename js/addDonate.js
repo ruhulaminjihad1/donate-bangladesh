@@ -47,6 +47,7 @@ addDonate2.addEventListener("click", function (event) {
     const remainingBalance = mainBalance - updateBalance2;
     console.log(remainingBalance);
     document.getElementById("main-balance").innerText = remainingBalance;
+    showModal();
   } else {
     alert("please add valid balance");
   }
@@ -63,13 +64,31 @@ addDonate3.addEventListener("click", function (event) {
   if (addDonate3 > 0) {
     const balance3 = getTextFieldValueById("donate-balance3");
     console.log(balance3);
-    const updateBalance3 = balance3 + addDonate3;
-    document.getElementById("donate-balance3").innerText = updateBalance3;
     const mainBalance = getTextFieldValueById("main-balance");
-    const remainingBalance = mainBalance - updateBalance3;
-    console.log(remainingBalance);
-    document.getElementById("main-balance").innerText = remainingBalance;
+    if (addDonate3 > mainBalance) {
+      alert("Insufficient balance!");
+    } else {
+      const updateBalance3 = balance3 + addDonate3;
+      document.getElementById("donate-balance3").innerText = updateBalance3;
+
+      const remainingBalance = mainBalance - addDonate3;
+      console.log(remainingBalance);
+      document.getElementById("main-balance").innerText = remainingBalance;
+      showModal();
+    }
   } else {
-    alert("please add valid amount");
+    alert("Please add a valid input in this regards");
   }
 });
+
+function showModal() {
+  const modalToggle = document.getElementById("my_modal_6");
+
+  // Show the modal
+  modalToggle.checked = true; // This will open the modal
+
+  // Close modal on click
+  document.getElementById("modal-close").addEventListener("click", function () {
+    modalToggle.checked = false; // This will close the modal
+  });
+}

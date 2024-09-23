@@ -12,3 +12,5 @@ function getTextFieldValueById(id) {
   const TextNumber = parseFloat(textValue);
   return TextNumber;
 }
+
+function showSectionById(id) {}
