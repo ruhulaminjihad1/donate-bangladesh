@@ -39,7 +39,7 @@
     </script>
   </head>
   <body>
-    <header class=" sticky top-0 z-50 shadow-md">
+    <header class=" sticky top-0 z-50 shadow-md ">
       <div class="bg-rose-100">
         <nav class="w-11/12 mx-auto">
           <div class="navbar py-5">
@@ -47,16 +47,16 @@
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                 <a href="/blog.html">
-                  <button class="btn bg-baseColor font-bold text-xl  " >Blog</button>
+                  <button class="btn bg-baseColor font-bold text-xl" >Blog</button>
                 </a>
 
                 </div>
               </div>
             </div>
             <div class="navbar-center">
-              <div class="flex justify-start lg:justify-center items-start lg:items-center gap-2 lg:gap-5 -ml-40">
+              <div class="flex justify-start lg:justify-center items-start lg:items-center gap-2 ">
                 <img class="w-6 lg:w-12" src="assets/logo.png" alt="" />
-                <h3 class="font-bold text-sm lg:text-xl">Donate Bangladesh</h3>
+                <h3 class="font-bold text-sm lg:text-xl"><span class="hidden lg:block">Donate Bangladesh</span> </h3>
               </div>
             </div>
             <div class="navbar-end">
@@ -74,13 +74,13 @@
         </nav>
         
       </div>
-      
+      <div class="flex justify-center gap-5 pt-10 pb-5 bg-white/60 backdrop-blur-md transition duration-300">
+        <button class="btn bg-baseColor  text-xl font-bold">Donation</button>
+        <button class="btn btn-ghost  text-xl font-bold">History</button>
+      </div>
+     
     </header>
-    <div class="flex justify-center gap-5 pt-10 pb-5">
-      <button class="btn bg-baseColor  text-xl font-bold">Donation</button>
-      <button class="btn btn-ghost  text-xl font-bold">History</button>
-    </div>
-    <div class="divider"></div>
+  
     <!-- main section start  -->
     <main class="w-10/12 mx-auto">
       <!-- card section start  -->
@@ -94,14 +94,14 @@
             <div>
               <button class="btn">
               <img src="/assets/coin.png" alt="">  
-              <p>0</p>BDT
+              <p>100</p>BDT
               </button>
               <h2 class="text-xl font-bold"> Donate for flood at Noakhali, Bangladesh</h2>
               <p class="py-4 text-smallText">
                 The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
               </p>
-              <input type="text" name="" id="" placeholder="write Donation Amount" class="w-full border-2 border-gray-300 rounded-lg px-5 py-4 mb-3  focus:outline-none  ">
-              <button class="btn bg-baseColor w-full text-xl ">Donate</button>
+              <input type="text" name="" id="" placeholder="write Donation Amount" class="w-full border-2 border-gray-300 rounded-lg px-5 py-2 mb-3  focus:outline-none  ">
+              <button id="btn-donate-now1" class="btn bg-baseColor w-full text-xl ">Donate Now</button>
             </div>
           </div>
         </div>
