@@ -13,4 +13,7 @@ function getTextFieldValueById(id) {
   return TextNumber;
 }
 
-function showSectionById(id) {}
+function showSectionById(id) {
+  document.getElementById("transaction-section").classList.add("hidden");
+  document.getElementById(id).classList.remove("hidden");
+}
