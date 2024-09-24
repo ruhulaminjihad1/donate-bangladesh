@@ -245,7 +245,16 @@ historyTab.addEventListener("click", function () {
 
   donationTab.classList.remove("bg-baseColor");
 
+  document.getElementById("history-list").classList.remove("hidden");
   document.getElementById("donation-form").classList.add("hidden");
+
+  donationTab.addEventListener("click", function () {
+    donationTab.classList.add("bg-baseColor");
+    historyTab.classList.remove("bg-baseColor");
+
+    document.getElementById("history-list").classList.add("hidden");
+    document.getElementById("donation-form").classList.remove("hidden");
+  });
 });
 
 // assistant tab
