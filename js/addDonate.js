@@ -63,7 +63,7 @@ addDonate1.addEventListener("click", function (event) {
         };
         const now = new Date();
         const formattedDate = now.toLocaleString("en-US", options); // e.g. "Sep 25, 2024, 14:00"
-        return `${formattedDate} GMT+6h`;
+        return `Date: ${formattedDate} GMT+6h`;
       }
       const historyContainer = document.getElementById("history-list");
       historyContainer.appendChild(historyItem);
