@@ -40,10 +40,11 @@ addDonate1.addEventListener("click", function (event) {
       // donation title
       const titleParagraph = document.createElement("p");
       titleParagraph.textContent = `${donationTitle}`;
-      titleParagraph.classList.add("text-2xl", "font-bold");
+      titleParagraph.classList.add("text-xl", "font-bold");
       const donationParagraph = document.createElement("p");
       donationParagraph.textContent = `Taka: ${updateBalance} `;
-      donationParagraph.classList.add("text-3xl", "font-bold");
+
+      donationParagraph.classList.add("text-xl", "font-bold", "text-green-500");
       const dateParagraph = document.createElement("p");
       dateParagraph.textContent = getFormattedDate();
 
@@ -63,7 +64,7 @@ addDonate1.addEventListener("click", function (event) {
         };
         const now = new Date();
         const formattedDate = now.toLocaleString("en-US", options); // e.g. "Sep 25, 2024, 14:00"
-        return `Date: ${formattedDate} GMT+6h`;
+        return `Date: ${formattedDate} GMT+6h  (Bangladesh Standard Time)`;
       }
       const historyContainer = document.getElementById("history-list");
       historyContainer.appendChild(historyItem);
@@ -116,10 +117,14 @@ addDonate2.addEventListener("click", function (event) {
       // donation title
       const titleParagraph2 = document.createElement("p");
       titleParagraph2.textContent = `${donationTitle2}`;
-      titleParagraph2.classList.add("text-2xl", "font-bold");
+      titleParagraph2.classList.add("text-xl", "font-bold");
       const donationParagraph2 = document.createElement("p");
       donationParagraph2.textContent = `Taka: ${updateBalance2} `;
-      donationParagraph2.classList.add("text-3xl", "font-bold");
+      donationParagraph2.classList.add(
+        "text-xl",
+        "font-bold",
+        "text-green-500"
+      );
       const dateParagraph2 = document.createElement("p");
       dateParagraph2.textContent = getFormattedDate();
 
@@ -139,7 +144,7 @@ addDonate2.addEventListener("click", function (event) {
         };
         const now = new Date();
         const formattedDate = now.toLocaleString("en-US", options); // e.g. "Sep 25, 2024, 14:00"
-        return `${formattedDate} GMT+6h`;
+        return `${formattedDate} GMT+6h (Bangladesh Standard Time)`;
       }
       const historyContainer2 = document.getElementById("history-list");
       historyContainer2.appendChild(historyItem2);
@@ -191,10 +196,14 @@ addDonate3.addEventListener("click", function (event) {
       // donation title
       const titleParagraph3 = document.createElement("p");
       titleParagraph3.textContent = `${donationTitle3}`;
-      titleParagraph3.classList.add("text-2xl", "font-bold");
+      titleParagraph3.classList.add("text-xl", "font-bold");
       const donationParagraph3 = document.createElement("p");
       donationParagraph3.textContent = `Taka: ${updateBalance3} `;
-      donationParagraph3.classList.add("text-3xl", "font-bold");
+      donationParagraph3.classList.add(
+        "text-xl",
+        "font-bold",
+        "text-green-500"
+      );
       const dateParagraph3 = document.createElement("p");
       dateParagraph3.textContent = getFormattedDate();
 
@@ -214,7 +223,7 @@ addDonate3.addEventListener("click", function (event) {
         };
         const now = new Date();
         const formattedDate = now.toLocaleString("en-US", options); // e.g. "Sep 25, 2024, 14:00"
-        return `${formattedDate} GMT+6h`;
+        return `${formattedDate} GMT+6h (Bangladesh Standard Time)`;
       }
       const historyContainer3 = document.getElementById("history-list");
       historyContainer3.appendChild(historyItem3);
